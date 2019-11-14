@@ -58,13 +58,27 @@ body {
 }
 
 .social-icons a i:hover {
-  transform: rotate(-15deg);
   color: rgb(var(--color--accent));
-  transition: 0.2s;
+  animation: jiggle 0.15s ease-out;
 }
 
 h3 {
   color: rgb(var(--color--text--secondary));
+}
+
+@keyframes jiggle {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  80% {
+    transform: rotate(-18deg);
+  }
+
+  100% {
+    opacity: 1;
+    transform: rotate(-15deg);
+  }
 }
 
 /* CSS Preloader */
@@ -79,7 +93,7 @@ h3 {
 }
 
 .spinner > div {
-  background-color: #333;
+  background-color: rgb(var(--color--text--primary));
   height: 100%;
   width: 6px;
   display: inline-block;
@@ -138,6 +152,8 @@ h3 {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #ff6347;
+  background-color: rgb(var(--color--accent));
   z-index: 999999;
+
+  transition: 0.5s;
 }
