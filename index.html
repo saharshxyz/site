@@ -15,7 +15,13 @@
   <body>
     <!--CSS Preloader-->
     <div class="spinner-wrapper">
-      <div class="spinner"></div>
+      <div class="spinner">
+        <div class="rect1"></div>
+        <div class="rect2"></div>
+        <div class="rect3"></div>
+        <div class="rect4"></div>
+        <div class="rect5"></div>
+      </div>
     </div>
 
     <div class="header">
@@ -48,7 +54,7 @@
       $(document).ready(function() {
         //Preloader
         $(window).on("load", function() {
-          preloaderFadeOutTime = 1000;
+          preloaderFadeOutTime = 3000;
           function hidePreloader() {
             var preloader = $(".spinner-wrapper");
             preloader.fadeOut(preloaderFadeOutTime);
