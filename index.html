@@ -14,16 +14,6 @@
   </head>
   <body>
     <!--CSS Preloader-->
-    <div class="spinner-wrapper">
-      <div class="spinner">
-        <div class="rect1"></div>
-        <div class="rect2"></div>
-        <div class="rect3"></div>
-        <div class="rect4"></div>
-        <div class="rect5"></div>
-      </div>
-    </div>
-
     <div class="header">
       <div class="container">
         <img
@@ -37,32 +27,27 @@
           <a href="#"><i class="fab fa-linkedin"></i></a>
           <a href="#"><i class="fab fa-instagram"></i></a>
           <a href="#"><i class="fab fa-github-square"></i></a>
-          <a href="#"><i class="fab fa-facebook-square"></i></a>
+          <a href="#"><i class="fab fa-facebook-messenger"></i></a>
           <a href="#"><i class="far fa-envelope"></i></a>
         </div>
         <h3>@saharshy29</h3>
       </div>
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum sit voluptatibus incidunt a tempora recusandae cupiditate, modi odit ullam. Nemo possimus porro doloribus dolor nihil, architecto doloremque reprehenderit modi hic libero ab, beatae, aut ex perferendis repellendus facilis esse sapiente nostrum inventore! Accusamus minus impedit nesciunt maiores possimus animi qui! Adipisci, corrupti mollitia asperiores repellat qui at doloremque, eligendi vero et odit ratione aperiam eos minus aliquam? Possimus sunt quia aperiam nam odio consectetur. Assumenda quas voluptatibus earum iure labore.</p>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum sit
+        voluptatibus incidunt a tempora recusandae cupiditate, modi odit ullam.
+        Nemo possimus porro doloribus dolor nihil, architecto doloremque
+        reprehenderit modi hic libero ab, beatae, aut ex perferendis repellendus
+        facilis esse sapiente nostrum inventore! Accusamus minus impedit
+        nesciunt maiores possimus animi qui! Adipisci, corrupti mollitia
+        asperiores repellat qui at doloremque, eligendi vero et odit ratione
+        aperiam eos minus aliquam? Possimus sunt quia aperiam nam odio
+        consectetur. Assumenda quas voluptatibus earum iure labore.
+      </p>
     </div>
 
     <!-- ----------
         Scripts 
     ---------- -->
     <script src="assets/js/jquery.js"></script>
-
-    <!-- Preloader -->
-    <script>
-      $(document).ready(function() {
-        //Preloader
-        $(window).on("load", function() {
-          preloaderFadeOutTime = 3000;
-          function hidePreloader() {
-            var preloader = $(".spinner-wrapper");
-            preloader.fadeOut(preloaderFadeOutTime);
-          }
-          hidePreloader();
-        });
-      });
-    </script>
   </body>
 </html>
