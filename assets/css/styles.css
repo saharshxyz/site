@@ -21,7 +21,8 @@ body {
   line-height: 1.5;
   color: rgb(var(--color--text--primary));
 
-  margin: 5% 30%;
+  width: 55vw;
+  margin: 5% auto;
 }
 
 .header {
@@ -105,4 +106,16 @@ a:hover {
 
 .emphasis {
   font-weight: bold;
+}
+
+@media screen and (max-width: 1200px) {
+  body {
+    min-width: 70vw;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  body {
+    min-width: 90vw;
+  }
 }
