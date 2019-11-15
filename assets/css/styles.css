@@ -234,4 +234,12 @@ body ~ .container {
   .creation {
     width: 100%;
   }
+
+  .creations {
+    flex-direction: column;
+  }
+
+  .creation:not(:first-child) {
+    margin-top: 1em;
+  }
 }
