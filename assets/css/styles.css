@@ -21,8 +21,10 @@ body {
   line-height: 1.5;
   color: rgb(var(--color--text--primary));
 
-  width: 55vw;
+  width: 40em;
+  max-width: 90vw;
   margin: 5% auto;
+  background-color: #fff;
 }
 
 .header {
@@ -30,9 +32,7 @@ body {
   -moz-box-shadow: 0px 0px 40px 5px rgba(204, 204, 204, 0.6);
   box-shadow: 0px 0px 40px 5px rgba(204, 204, 204, 0.6);
   /* box-shadow: [horizontal offset] [vertical offset] [blur radius] [optional spread radius] [color]; */
-
   border-radius: 10px;
-  /* border: 3px solid red; */
 
   padding: 1em;
 }
@@ -73,7 +73,13 @@ a:visited {
   animation: jiggle 0.15s ease-out;
 }
 
-h3 {
+h2 {
+  border-bottom: 1px solid rgb(var(--color--text--primary));
+
+  font-size: 1.5em;
+}
+
+h4 {
   color: rgb(var(--color--text--secondary));
 }
 
@@ -108,14 +114,82 @@ a:hover {
   font-weight: bold;
 }
 
-@media screen and (max-width: 1200px) {
-  body {
-    min-width: 70vw;
-  }
+section {
+  margin: 2em 5px;
 }
 
-@media screen and (max-width: 1000px) {
-  body {
-    min-width: 90vw;
-  }
+h2 + .container {
+  padding: 0.5em 2em;
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  height: auto;
+}
+
+.item > img {
+  width: 200px;
+  height: 200px;
+  border-radius: 10%;
+
+  margin: auto;
+}
+
+.item > .content {
+  padding-left: 1em;
+}
+
+.item:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.item:nth-child(even) > .content {
+  padding-left: 0;
+  padding-right: 1.3em;
+}
+
+.item {
+  margin: 1em 0;
+}
+
+.creation {
+  fill: rgb(var(--color--primary));
+
+  -webkit-box-shadow: 0px 0px 40px 5px rgba(204, 204, 204, 0.6);
+  -moz-box-shadow: 0px 0px 40px 5px rgba(204, 204, 204, 0.6);
+  box-shadow: 0px 0px 40px 5px rgba(204, 204, 204, 0.6);
+  /* box-shadow: [horizontal offset] [vertical offset] [blur radius] [optional spread radius] [color]; */
+  border-radius: 10px;
+
+  width: 45%;
+
+  transform: scale(1.00);
+  transition: transform 0.15s ease-out;
+}
+
+.creation:hover {
+  transform: scale(1.03);
+  cursor: pointer;
+}
+
+.creation .content {
+  padding: 1em;
+}
+
+.creation img {
+  width: 100%;
+  height: 10em;
+
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.creations {
+  display: flex;
+  padding: 0.5em 2em;
+  flex-direction: row;
+  justify-content: space-around;
 }
