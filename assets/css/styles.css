@@ -204,3 +204,7 @@ h2 + .container {
 h6 {
   text-align: center;
 }
+
+body ~ .container {
+ margin: auto;
+}
