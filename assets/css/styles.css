@@ -103,7 +103,6 @@ a:hover {
 }
 .emphasis {
   color: rgb(var(--color--accent));
-
   font-weight: bold;
 }
 
