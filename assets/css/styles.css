@@ -205,5 +205,33 @@ h6 {
 }
 
 body ~ .container {
- margin: auto;
+  margin: auto;
+}
+
+@media only screen and (max-width: 768px) {
+  h2 {
+    text-align: center;
+  }
+  
+  .item {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .item img {
+    width: 100%;
+  }
+
+  .item:nth-child(even) {
+    flex-direction: column-reverse;
+  }
+
+  .item:nth-child(even) > .content {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .creation {
+    width: 100%;
+  }
 }
