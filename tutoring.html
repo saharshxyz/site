@@ -14,11 +14,12 @@
       src="https://kit.fontawesome.com/d7f3599ea9.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" href="assets/css/sal.css" />
     <link rel="stylesheet" href="assets/css/styles.css" />
-    <title>Saharsh Yeruva | @saharshy29</title>
+    <title>Tutoring</title>
   </head>
   <body>
-    <div class="container">
+    <div class="container" data-sal="slide-down" data-sal-duration="800">
       <p>
         <span class="emphasis">Thank you for considering me as a tutor!</span> I
         am truly grateful for being given the opportunity to be a tutor, and as
@@ -53,7 +54,7 @@
         width="100%"
         height="1000px"
         frameborder="0"
-        >https://www.vyte.in/saharsh</iframe
+        data-sal="slide-up" data-sal-duration="800">https://www.vyte.in/saharsh</iframe
       >
     </div>
 
@@ -61,5 +62,13 @@
         Scripts 
     ---------- -->
     <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/sal.js"></script>
+    <!-- sal.js -->
+    <script>
+      sal({
+        threshold: 0.1,
+        once: true
+      });
+    </script>
   </body>
 </html>
