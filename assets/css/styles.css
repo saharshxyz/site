@@ -209,6 +209,7 @@ body ~ .container {
 
 footer {
   color: inherit;
+  text-align: center;
 }
 
 @media only screen and (max-width: 768px) {
