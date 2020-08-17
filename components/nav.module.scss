@@ -1,3 +1,38 @@
-.nav {
-  color: colors.$primary;
+@use 'styles/colors';
+@use 'styles/breakpoints';
+
+.root {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5em;
+}
+
+.group {
+  display: flex;
+}
+
+.group p + p {
+  margin-left: 1.3em;
+
+  @media screen and (max-width: breakpoints.$mobile-tablet) {
+    margin-left: 0.7em;
+  }
+}
+
+.name {
+  font-family: beyno;
+  display: block;
+
+  @media screen and (max-width: breakpoints.$mobile) {
+    display: none;
+  }
+}
+
+.username {
+  color: colors.$gray;
+  display: block;
+
+  @media screen and (max-width: breakpoints.$mobile-tablet) {
+    display: none;
+  }
 }

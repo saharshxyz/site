@@ -1,7 +1,45 @@
 @use './colors';
+@use './breakpoints';
 @use './variables' as *;
-@use './mixins' as *;
-@use './functions' as *;
+@use 'mixins' as *;
+@use 'functions' as *;
+
+:root {
+  --color--white: #ffffff;
+  --color--black: #000000;
+  --color--gray: #7a8c97;
+
+  --color--primary: #01a7c2;
+  --color--secondary: #086c71;
+
+  --background--primary: #e4e9f1;
+  --background--secondary: #fff;
+
+  --text--primary: var(--color-black);
+  --text-color--opposite: var(--color-white);
+
+  @media (prefers-color-scheme: dark) {
+    --color--primary: #ff9a1f;
+    --color--secondary: #fbb13c;
+
+    --background--primary: #15283b;
+    --background--secondary: #2d3b4e;
+
+    --text--primary: var(--color--white);
+    --text-color--opposite: var(--color--black);
+  }
+}
+
+::selection {
+  background: map-get(colors.$background, secondary);
+}
+
+@font-face {
+  font-family: 'beyno';
+  src: url('../public/fonts/beyno/beyno-webfont.woff2') format('woff2'), url('../public/fonts/beyno/beyno-webfont.woff2') format('woff'), url('../public/fonts/beyno/BEYNO.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
 
 html,
 body {
@@ -12,6 +50,10 @@ body {
   font-size: 1.125em;
   color: map-get(colors.$text, primary);
   background-color: map-get(colors.$background, primary);
+
+  @media screen and (max-width: breakpoints.$mobile) {
+    font-size: 1em;
+  }
 }
 
 * {
