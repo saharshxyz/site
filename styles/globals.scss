@@ -1,0 +1,31 @@
+@use './colors';
+@use './variables' as *;
+@use './mixins' as *;
+@use './functions' as *;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: $fallback-fonts;
+  line-height: 1.6;
+  font-size: 1.125em;
+  color: map-get(colors.$text, primary);
+  background-color: map-get(colors.$background, primary);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a,
+a:visited {
+  color: currentColor;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}

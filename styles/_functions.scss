@@ -1,0 +1,11 @@
+/* ==========
+	Sass default function overrides
+========== */
+
+@function css-min($numbers...) {
+  @return m#{i}n(#{$numbers});
+}
+
+@function css-max($numbers...) {
+  @return m#{a}x(#{$numbers});
+}

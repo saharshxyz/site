@@ -1,0 +1,39 @@
+:root {
+  --color--white: #ffffff;
+  --color--black: #000000;
+  --color--gray: #7a8c97;
+
+  --color--primary: #01a7c2;
+  --color--secondary: #086c71;
+
+  --background--primary: #e4e9f1;
+  --background--secondary: #fff;
+
+  --text--primary: var(--color-black);
+  --text-color--opposite: var(--color-white);
+
+  @media (prefers-color-scheme: dark) {
+    --color--primary: #ff9a1f;
+    --color--secondary: #fbb13c;
+
+    --background--primary: #15283b;
+    --background--secondary: #2d3b4e;
+
+    --text--primary: var(--color--white);
+    --text-color--opposite: var(--color--black);
+  }
+}
+
+$primary: var(--color--primary);
+$secondary: var(--color--secondary);
+$white: var(--color--white);
+$black: var(--color--black);
+$gray: var(--color--gray);
+$background: (
+  primary: var(--background--primary),
+  secondary: var(--background--secondary),
+);
+$text: (
+  primary: var(--text--primary),
+  opposite: var(--text--color--opposite),
+);
