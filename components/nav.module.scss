@@ -15,13 +15,14 @@
   margin-left: 1.3em;
 
   @media screen and (max-width: breakpoints.$mobile-tablet) {
-    margin-left: 0.7em;
+    margin-left: 0.5em;
   }
 }
 
 .name {
-  font-family: beyno;
+  // font-family: beyno;
   display: block;
+  font-weight: bold;
 
   @media screen and (max-width: breakpoints.$mobile) {
     display: none;

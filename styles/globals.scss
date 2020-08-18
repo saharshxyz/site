@@ -1,6 +1,7 @@
-@use './colors';
-@use './breakpoints';
-@use './variables' as *;
+@use 'colors';
+@use 'breakpoints';
+@use 'fonts';
+@use 'variables' as *;
 @use 'mixins' as *;
 @use 'functions' as *;
 
@@ -34,18 +35,11 @@
   background: map-get(colors.$background, secondary);
 }
 
-@font-face {
-  font-family: 'beyno';
-  src: url('../public/fonts/beyno/beyno-webfont.woff2') format('woff2'), url('../public/fonts/beyno/beyno-webfont.woff2') format('woff'), url('../public/fonts/beyno/BEYNO.otf') format('opentype');
-  font-weight: normal;
-  font-style: normal;
-}
-
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: $fallback-fonts;
+  font-family: fonts.$mono;
   line-height: 1.6;
   font-size: 1.125em;
   color: map-get(colors.$text, primary);
