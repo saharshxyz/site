@@ -20,6 +20,7 @@ jobs:
           VALIDATE_ALL_CODEBASE: true
           DEFAULT_BRANCH: master
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          JAVASCRIPT_ES_CONFIG_FILE: /github/workspace/.eslintrc.js
+          JAVASCRIPT_ES_CONFIG_FILE: .eslintrc.js
           OUTPUT_DETAILS: detailed
           VALIDATE_JAVASCRIPT_STANDARD: false
+          VALIDATE_JAVASCRIPT_ES: true
