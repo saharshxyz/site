@@ -22,3 +22,4 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           JAVASCRIPT_ES_CONFIG_FILE: /github/workspace/.eslintrc.js
           OUTPUT_DETAILS: detailed
+          VALIDATE_JAVASCRIPT_STANDARD: false
