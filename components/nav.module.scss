@@ -1,30 +1,59 @@
 @use 'styles/colors';
 @use 'styles/breakpoints';
+@use 'styles/fonts';
 
 .root {
   display: flex;
   justify-content: space-between;
   padding: 0.5em;
+  font-size: calc(1rem / 1.125);
+
+  @media screen and (max-width: breakpoints.$mobile) {
+    font-size: 1rem;
+  }
 }
 
 .group {
   display: flex;
 }
 
-.group p + p {
+.link {
   margin-left: 1.3em;
+  position: relative;
+  transition: all 0.4s ease-in-out;
 
-  @media screen and (max-width: breakpoints.$mobile-tablet) {
+  @media screen and (max-width: breakpoints.$mobile--tablet) {
     margin-left: 0.5em;
   }
 }
 
+.link:hover {
+  color: var(--text--color) !important;
+}
+
+.link::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  max-width: 0;
+  background-color: transparent;
+  border-bottom: 1px solid var(--color--primary);
+  transition: max-width 0.3s ease-in-out;
+}
+
+.link:hover::after {
+  max-width: 200px;
+}
+
 .name {
-  // font-family: beyno;
+  // font-family: beyno, fonts.$serif;
+  font-family: fonts.$serif;
   display: block;
   font-weight: bold;
 
-  @media screen and (max-width: breakpoints.$mobile) {
+  @media screen and (max-width: breakpoints.$tiny-mobile) {
     display: none;
   }
 }
@@ -32,8 +61,9 @@
 .username {
   color: colors.$gray;
   display: block;
+  margin-left: 0.5em;
 
-  @media screen and (max-width: breakpoints.$mobile-tablet) {
+  @media screen and (max-width: breakpoints.$mobile) {
     display: none;
   }
 }
