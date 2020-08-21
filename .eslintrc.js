@@ -21,7 +21,7 @@ module.exports = {
         tabWidth: 2,
         semi: true,
         singleQuote: true,
-        arrowParens: 'always'
+        arrowParens: 'always',
       },
     ],
     'react/jsx-filename-extension': 'off',
@@ -31,6 +31,9 @@ module.exports = {
     'react/destructuring-assignment': 'off',
     'react/prop-types': 'warn',
     'react/jsx-one-expression-per-line': 'off',
+    'no-unused-vars': 'off',
+    'global-require': 'off',
+    'react/jsx-props-no-spreading': 'off',
   },
   ignorePatterns: [
     '.DS_Store',
