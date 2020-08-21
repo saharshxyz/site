@@ -1,0 +1,57 @@
+@use 'styles/colors';
+@use 'styles/fonts';
+
+.root {
+  width: 100%;
+  background-color: map-get(colors.$background, secondary);
+  margin-bottom: 0;
+  margin-top: 2em;
+  padding: 1em;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.name {
+  font-family: beyno, fonts.$serif;
+}
+
+.name,
+.name:hover,
+.name:active,
+.username,
+.username:hover,
+.username:active {
+  color: map-get(colors.$text, primary);
+  text-decoration: none;
+}
+
+.name:hover,
+.username:hover {
+  color: colors.$primary;
+}
+
+.icon {
+  transition: all 0.1s ease-in-out;
+}
+
+.icon + .icon {
+  margin-left: 0.4em;
+}
+
+.twitter:hover,
+.twitter:active {
+  color: #1da1f2;
+}
+
+.instagram:hover,
+.instagram:active {
+  color: #e4405f;
+}
+
+.email:hover,
+.email:active {
+  color: colors.$primary;
+}

@@ -1,6 +1,6 @@
-import nav from "./Nav.module.scss";
+import nav from './Nav.module.scss';
 
-export default function Nav() {
+const Nav = () => {
   return (
     <div className={nav.root}>
       <div className={nav.group}>
@@ -15,4 +15,6 @@ export default function Nav() {
       </div>
     </div>
   );
-}
+};
+
+export default Nav;

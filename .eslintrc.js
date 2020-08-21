@@ -21,11 +21,16 @@ module.exports = {
         tabWidth: 2,
         semi: true,
         singleQuote: true,
-        arrowParens: 'always',
+        arrowParens: 'always'
       },
     ],
     'react/jsx-filename-extension': 'off',
     'react/react-in-jsx-scope': 'off',
+    'import/no-unresolved': 'off',
+    'import/extensions': 'off',
+    'react/destructuring-assignment': 'off',
+    'react/prop-types': 'warn',
+    'react/jsx-one-expression-per-line': 'off',
   },
   ignorePatterns: [
     '.DS_Store',
@@ -36,5 +41,7 @@ module.exports = {
     '.eslintcache',
     'webpack**',
     '.github/workflows/linter.yml',
+    '.github/workflows/lint.yml',
+    './tsconfig.json',
   ],
 };
