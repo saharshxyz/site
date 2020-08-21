@@ -1,15 +1,8 @@
 @font-face {
-  font-family: 'beyno';
-  src: url('../public/fonts/beyno/beyno-webfont.woff2') format('woff2'), url('../public/fonts/beyno/beyno-webfont.woff2') format('woff'), url('../public/fonts/beyno/BEYNO.otf') format('opentype');
-  font-weight: normal;
-  font-style: normal;
+  font-family: Beyno;
+  src: url('../fonts/beyno.otf') format('opentype');
 }
 
-$font-prefix: '~@ibm/plex';
-@import '~@ibm/plex/scss/ibm-plex.scss';
-
-$sans: 'IBM Plex Sans', 'Helvetica Neue', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'sans-serif';
-
-$serif: 'IBM Plex Serif', 'Georgia', 'Times', 'serif';
-
-$mono: 'IBM Plex Mono', 'Menlo', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Courier', 'monospace';
+$sans: 'Helvetica Neue', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Ubuntu', 'sans-serif';
+$serif: 'Georgia', 'Times', 'serif';
+$mono: 'Menlo', 'Courier', 'monospace';

@@ -8,7 +8,7 @@
   padding: 0.5em;
   font-size: calc(1rem / 1.125);
 
-  @media screen and (max-width: breakpoints.$mobile) {
+  @media (max-width: breakpoints.$mobile) {
     font-size: 1rem;
   }
 }
@@ -22,7 +22,7 @@
   position: relative;
   transition: all 0.4s ease-in-out;
 
-  @media screen and (max-width: breakpoints.$mobile--tablet) {
+  @media (max-width: breakpoints.$mobile--tablet) {
     margin-left: 0.5em;
   }
 }
@@ -48,12 +48,11 @@
 }
 
 .name {
-  // font-family: beyno, fonts.$serif;
-  font-family: fonts.$serif;
+  font-family: Beyno, fonts.$serif;
   display: block;
   font-weight: bold;
 
-  @media screen and (max-width: breakpoints.$tiny-mobile) {
+  @media (max-width: breakpoints.$tiny-mobile) {
     display: none;
   }
 }
@@ -63,7 +62,7 @@
   display: block;
   margin-left: 0.5em;
 
-  @media screen and (max-width: breakpoints.$mobile) {
+  @media (max-width: breakpoints.$mobile) {
     display: none;
   }
 }
