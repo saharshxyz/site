@@ -3,7 +3,7 @@ import Layout from '../components/Layout';
 const Home = () => {
   return (
     <Layout>
-      {/* <p>
+      <p>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque nulla in
         autem sapiente quisquam expedita earum molestiae tenetur quidem harum
         repellat voluptate praesentium quo voluptatum dolor magnam, provident
@@ -17,7 +17,7 @@ const Home = () => {
         provident laudantium rem cupiditate vel quas suscipit deleniti! Id
         optio, perspiciatis ipsam ducimus delectus veniam commodi totam,
         recusandae blanditiis, vitae laudantium dolore beatae ratione rerum.
-      </p> */}
+      </p>
     </Layout>
   );
 };

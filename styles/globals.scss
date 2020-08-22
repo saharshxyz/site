@@ -7,17 +7,17 @@
 
 :root {
   --color--white: #ffffff;
-  --color--black: #000000;
+  --color--black: #303030;
   --color--gray: #7a8c97;
 
   --color--primary: #01a7c2;
   --color--secondary: #086c71;
 
   --background--primary: #e4e9f1;
-  --background--secondary: #fff;
+  --background--secondary: var(--color--white);
 
-  --text--primary: var(--color-black);
-  --text-color--opposite: var(--color-white);
+  --text--primary: var(--color--black);
+  --text-color--opposite: var(--color--white);
 
   @media (prefers-color-scheme: dark) {
     --color--primary: #ff9a1f;

@@ -1,6 +1,10 @@
 import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import {
+  faGithub,
+  faLinkedin,
+  faInstagram,
+} from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import footer from './Footer.module.scss';
 
@@ -12,7 +16,7 @@ const Footer = () => {
           <a className={footer.name}>Saharsh Yeruva</a>
         </Link>
       </h1>
-      {/* <p>
+      <p>
         <a href="https://srsh.link/twitter" className={footer.username}>
           @saharshy29
         </a>{' '}
@@ -21,6 +25,12 @@ const Footer = () => {
           <FontAwesomeIcon
             icon={faGithub}
             className={`${footer.icon} ${footer.github}`}
+          />
+        </a>{' '}
+        <a href="https://srsh.link/instagram">
+          <FontAwesomeIcon
+            icon={faInstagram}
+            className={`${footer.icon} ${footer.instagram}`}
           />
         </a>{' '}
         <a href="https://srsh.link/linkedin">
@@ -36,7 +46,7 @@ const Footer = () => {
             className={`${footer.icon} ${footer.email}`}
           />{' '}
         </a>
-      </p> */}
+      </p>
     </div>
   );
 };

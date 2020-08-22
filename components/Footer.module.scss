@@ -14,18 +14,24 @@
   flex-direction: column;
 }
 
+.root h1,
+.name {
+  margin: 0;
+  padding: 0;
+}
+
 .name {
   font-family: beyno, fonts.$serif;
+  font-size: 1.5rem;
 }
 
 .name,
-.name:hover,
-.name:active,
-.username,
-.username:hover,
-.username:active {
-  color: map-get(colors.$text, primary);
-  text-decoration: none;
+.username {
+  &:hover,
+  :active {
+    color: map-get(colors.$text, primary);
+    text-decoration: none;
+  }
 }
 
 .name:hover,
@@ -35,24 +41,37 @@
 
 .icon {
   transition: all 0.1s ease-in-out;
+  font-size: 1.1em;
+
+  & + .icon {
+    margin-left: 0.4em;
+  }
 }
 
-.icon + .icon {
-  margin-left: 0.4em;
+.github {
+  &:hover,
+  :active {
+    color: #4078c0;
+  }
 }
 
-.github:hover,
-.github:active {
-  color: #4078c0;
-  // color: #181717;
+.instagram {
+  &:hover,
+  :active {
+    color: #e4405f;
+  }
 }
 
-.linkedin:hover,
-.linkedin:active {
-  color: #0077b5;
+.linkedin {
+  &:hover,
+  :active {
+    color: #0077b5;
+  }
 }
 
-.email:hover,
-.email:active {
-  color: colors.$primary;
+.email {
+  &:hover,
+  :active {
+    color: colors.$primary;
+  }
 }
