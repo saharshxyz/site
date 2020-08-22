@@ -14,16 +14,7 @@
   },
   "plugins": ["react", "@typescript-eslint", "prettier"],
   "rules": {
-    "prettier/prettier": [
-      "off",
-      {
-      "trailingComma": "es5",
-  "tabWidth": 2,
-  "semi": true,
-  "singleQuote": true,
-  "arrowParens": "always"
-}
-    ],
+    "prettier/prettier": "warn",
     "react/jsx-filename-extension": "warn",
     "react/react-in-jsx-scope": "warn",
     "import/no-unresolved": "warn",
