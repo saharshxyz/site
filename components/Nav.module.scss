@@ -17,30 +17,39 @@
   display: flex;
 }
 
+.root a,
+.root a:hover,
+.root a:active,
+.root a:visited {
+  text-decoration: none;
+}
+
 .link {
   margin-left: 1.3em;
   position: relative;
   transition: all 0.4s ease-in-out;
 
+  &:hover::after {
+    
+    max-width: 200px;
+  }
+  
+  &::after {
+
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    max-width: 0;
+    background-color: transparent;
+    border-bottom: 2px solid colors.$primary;
+    transition: max-width 0.3s ease-in-out;
+    }
+
   @media  (max-width: breakpoints.$mobile--tablet) {
     margin-left: 0.5em;
   }
-}
-
-.link::after {
-  content: '';
-  position: absolute;
-  bottom: -1px;
-  left: 0;
-  width: 100%;
-  max-width: 0;
-  background-color: transparent;
-  border-bottom: 1px solid colors.$primary;
-  transition: max-width 0.3s ease-in-out;
-}
-
-.link:hover::after {
-  max-width: 200px;
 }
 
 .name {
@@ -58,6 +67,10 @@
   color: colors.$gray;
   display: block;
   margin-left: 0.5em;
+
+  &:hover {
+    color: colors.$primary;
+  }
 
   @media  (max-width: breakpoints.$mobile) {
     display: none;

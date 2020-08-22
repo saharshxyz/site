@@ -15,7 +15,7 @@ module.exports = {
   plugins: ['react', '@typescript-eslint', 'prettier'],
   rules: {
     'prettier/prettier': [
-      'warn',
+      'off',
       {
         trailingComma: 'es5',
         tabWidth: 2,
@@ -34,6 +34,7 @@ module.exports = {
     'no-unused-vars': 'off',
     'global-require': 'off',
     'react/jsx-props-no-spreading': 'off',
+    'jsx-a11y/anchor-is-valid': 'off',
   },
   ignorePatterns: [
     '.DS_Store',

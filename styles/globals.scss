@@ -44,6 +44,9 @@ body {
   background-color: map-get(colors.$background, primary);
   // transition: all 0.1s ease-in-out;
 
+  // For sticky footer
+  min-height: 100vh;
+
   @media  (max-width: breakpoints.$mobile) {
     font-size: 1em;
   }

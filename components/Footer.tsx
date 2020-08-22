@@ -1,5 +1,6 @@
+import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import footer from './Footer.module.scss';
 
@@ -7,25 +8,25 @@ const Footer = () => {
   return (
     <div className={footer.root}>
       <h1>
-        <a href="https://saharsh.tech" className={footer.name}>
-          Saharsh Yeruva
-        </a>
+        <Link href="/">
+          <a className={footer.name}>Saharsh Yeruva</a>
+        </Link>
       </h1>
-      <p>
-        <a href="https://saharsh.tech" className={footer.username}>
+      {/* <p>
+        <a href="https://srsh.link/twitter" className={footer.username}>
           @saharshy29
         </a>{' '}
         |{' '}
-        <a href="https://twitter.com/saharshy29">
+        <a href="https://srsh.link/github">
           <FontAwesomeIcon
-            icon={faTwitter}
-            className={`${footer.icon} ${footer.twitter}`}
+            icon={faGithub}
+            className={`${footer.icon} ${footer.github}`}
           />
         </a>{' '}
-        <a href="https://instagram.com/saharshy29">
+        <a href="https://srsh.link/linkedin">
           <FontAwesomeIcon
-            icon={faInstagram}
-            className={`${footer.icon} ${footer.instagram}`}
+            icon={faLinkedin}
+            className={`${footer.icon} ${footer.linkedin}`}
           />
         </a>{' '}
         <a href="mailto:hello@saharsh.tech">
@@ -35,7 +36,7 @@ const Footer = () => {
             className={`${footer.icon} ${footer.email}`}
           />{' '}
         </a>
-      </p>
+      </p> */}
     </div>
   );
 };

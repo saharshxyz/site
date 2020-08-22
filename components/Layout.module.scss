@@ -1,5 +1,17 @@
+.wrapper {
+  margin: 0;
+  padding: 0;
+
+  min-height: 100vh;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: space-between;
+  display: grid;
+  grid-template-rows: 1fr auto;
+}
+
 .contentWrapper {
   padding: 0.5em 1em;
-  margin: auto;
+  margin: 0 auto;
   max-width: 65ch;
 }

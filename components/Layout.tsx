@@ -9,11 +9,13 @@ const Layout = (props) => {
       <Head>
         <title>Saharsh Yeruva | @saharshy29</title>
       </Head>
-      <div className={layout.contentWrapper}>
-        <Nav />
-        {props.children}
+      <div className={layout.wrapper}>
+        <div className={layout.contentWrapper}>
+          <Nav />
+          {props.children}
+        </div>
+        <Footer />
       </div>
-      <Footer />
     </>
   );
 };
