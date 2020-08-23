@@ -48,7 +48,7 @@ body {
   min-height: 100vh;
 
   @media  (max-width: breakpoints.$mobile) {
-    font-size: 1em;
+    // font-size: 1em;
   }
 }
 
@@ -59,11 +59,8 @@ body {
 }
 
 a,
-a:visited {
+a:visited ,
+a:hover{
   color: currentColor;
   text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
 }

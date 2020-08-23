@@ -12,17 +12,23 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-}
+  p {
+    transform: translateY(-0.5em);
+  }
 
-.root h1,
-.name {
-  margin: 0;
-  padding: 0;
+  h1 {
+    border: none;
+  }
 }
-
 .name {
   font-family: beyno, fonts.$serif;
   font-size: 1.5rem;
+  border-bottom: none;
+
+  &:hover,
+  &:active {
+    color: colors.$primary;
+  }
 }
 
 .name,
@@ -32,11 +38,6 @@
     color: map-get(colors.$text, primary);
     text-decoration: none;
   }
-}
-
-.name:hover,
-.username:hover {
-  color: colors.$primary;
 }
 
 .icon {
