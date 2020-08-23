@@ -59,8 +59,9 @@ body {
 }
 
 a,
-a:visited ,
-a:hover{
+a:visited,
+a:hover,
+a:active{
   color: currentColor;
   text-decoration: none;
 }

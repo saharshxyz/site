@@ -1,16 +1,16 @@
 {
   "env": {
     "browser": true,
-    "es2020": true,
+    "es2020": true
   },
   "extends": ["plugin:react/recommended", "airbnb", "prettier"],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaFeatures": {
-      "jsx": true,
+      "jsx": true
     },
     "ecmaVersion": 11,
-    "sourceType": "module",
+    "sourceType": "module"
   },
   "plugins": ["react", "@typescript-eslint", "prettier"],
   "rules": {
@@ -21,8 +21,8 @@
         "tabWidth": 2,
         "semi": true,
         "singleQuote": true,
-        "arrowParens": "always",
-      },
+        "arrowParens": "always"
+      }
     ],
     "react/jsx-filename-extension": "off",
     "react/react-in-jsx-scope": "off",
@@ -35,6 +35,8 @@
     "global-require": "off",
     "react/jsx-props-no-spreading": "off",
     "jsx-a11y/anchor-is-valid": "off",
+    "react/no-unescaped-entities": "off",
+    "react/jsx-indent": "warn"
   },
   "ignorePatterns": [
     ".DS_Store",
@@ -46,6 +48,6 @@
     "webpack**",
     ".github/workflows/linter.yml",
     ".github/workflows/lint.yml",
-    "./tsconfig.json",
-  ],
+    "./tsconfig.json"
+  ]
 }

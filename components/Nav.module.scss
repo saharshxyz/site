@@ -26,7 +26,7 @@
 .link {
   margin-left: 1.3em;
   position: relative;
-  transition: all 1s ease-in-out;
+  transition: all 0.5s ease-in-out;
 
   &:hover::after {
     max-width: 200px;

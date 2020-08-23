@@ -15,26 +15,11 @@
     position: relative;
     transition: all 0.15s ease-in-out;
 
-    bottom: -2px;
+    padding-bottom: 2px;
     border-bottom: 2px solid colors.$primary;
 
     &:hover {
       color: colors.$primary;
-    }
-
-    &:hover::after {
-      max-width: 200px;
-    }
-
-    &::after {
-      content: '';
-      position: absolute;
-      bottom: -2px;
-      left: 0;
-      width: 100%;
-      max-width: 0;
-      background-color: transparent;
-      border-bottom: 1px solid colors.$primary;
     }
   }
 

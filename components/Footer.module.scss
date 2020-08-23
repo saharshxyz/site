@@ -20,22 +20,22 @@
     border: none;
   }
 }
+
 .name {
   font-family: beyno, fonts.$serif;
   font-size: 1.5rem;
-  border-bottom: none;
+  color: map-get(colors.$text, primary);
 
-  &:hover,
-  &:active {
-    color: colors.$primary;
+  &:visited {
+    @extend .name;
   }
 }
 
 .name,
 .username {
   &:hover,
-  :active {
-    color: map-get(colors.$text, primary);
+  &:active {
+    color: colors.$primary;
     text-decoration: none;
   }
 }
@@ -51,28 +51,28 @@
 
 .github {
   &:hover,
-  :active {
+  &:active {
     color: #4078c0;
   }
 }
 
 .instagram {
   &:hover,
-  :active {
+  &:active {
     color: #e4405f;
   }
 }
 
 .linkedin {
   &:hover,
-  :active {
+  &:active {
     color: #0077b5;
   }
 }
 
 .email {
   &:hover,
-  :active {
+  &:active {
     color: colors.$primary;
   }
 }
