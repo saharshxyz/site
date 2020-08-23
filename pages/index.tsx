@@ -34,7 +34,7 @@ const Home = () => {
             <a href="https://srsh.link/messenger">Messenger</a> /{' '}
             <a href="https://srsh.link/facebook">Facebook</a>
           </li>
-          <li>Email - hello [at] saharsh.tech</li>
+          <li>Email: hello [at] saharsh.tech</li>
         </ul>
       </Post>
     </Layout>

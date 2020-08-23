@@ -12,21 +12,33 @@
   }
 
   a {
-    color: colors.$primary;
-    text-decoration: none;
-		transition: all 0.2s ease-in-out;
+    position: relative;
+    transition: all 0.15s ease-in-out;
 
-    &:visited {
-      @extend a;
-    }
+    bottom: -2px;
+    border-bottom: 2px solid colors.$primary;
 
     &:hover {
-			text-decoration: none;
-      border-bottom: solid 2px currentColor;
+      color: colors.$primary;
+    }
+
+    &:hover::after {
+      max-width: 200px;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 100%;
+      max-width: 0;
+      background-color: transparent;
+      border-bottom: 1px solid colors.$primary;
     }
   }
 
   ul {
-		margin: 1em 0 0 2em;
+    margin: 1em 0 0 2em;
   }
 }
