@@ -15,7 +15,7 @@ const Home = () => {
 
         <p>
           As a current high-school senior at{' '}
-          <a href="https://westboroughk12.org" title="Westborough High School">
+          <a href="http://whs.westboroughk12.org" title="Westborough High School">
             Westborough High School
           </a>
           , the thing at the top of my mind is what I'll be doing after
