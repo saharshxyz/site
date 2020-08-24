@@ -1,0 +1,75 @@
+@use 'styles/colors';
+@use 'styles/breakpoints';
+@use 'styles/fonts';
+
+.root {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5em 0;
+  font-size: calc(1rem / 1.125);
+
+  margin-bottom: 3em;
+}
+
+.group {
+  display: flex;
+}
+
+.root a {
+  &:visited,
+  &:hover,
+  &:active {
+    text-decoration: none;
+  }
+}
+
+.link {
+  margin-left: 1.3em;
+  position: relative;
+  transition: all 0.5s ease-in-out;
+
+  &:hover::after {
+    max-width: 200px;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    max-width: 0;
+    background-color: transparent;
+    border-bottom: 3px solid colors.$primary;
+    transition: max-width 0.3s ease-in-out;
+  }
+
+  @media (max-width: breakpoints.$mobile--tablet) {
+    margin-left: 0.5em;
+  }
+}
+
+.name {
+  // font-family: beyno, fonts.$serif;
+  font-family: fonts.$serif;
+  display: block;
+  font-weight: bold;
+
+  @media (max-width: breakpoints.$tiny-mobile) {
+    display: none;
+  }
+}
+
+.username {
+  color: colors.$gray;
+  display: block;
+  margin-left: 0.5em;
+
+  &:hover {
+    color: colors.$primary;
+  }
+
+  @media (max-width: breakpoints.$mobile) {
+    display: none;
+  }
+}
