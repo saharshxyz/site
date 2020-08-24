@@ -1,4 +1,5 @@
-import { useEffect } from 'react'
+import { useEffect } from 'react';
+
 const SCRIPT_SRC = 'https://assets.calendly.com/assets/external/widget.js';
 export interface CalendlyEmbedProps {
   account: string;
@@ -11,9 +12,9 @@ const createScript = () => {
 };
 const CalendlyEmbed = ({ account, eventName }: CalendlyEmbedProps) => {
   useEffect(() => {
-    const script = document.body.appendChild(createScript())
-    return script.remove.bind(script)
-  }, [])
+    const script = document.body.appendChild(createScript());
+    return script.remove.bind(script);
+  }, []);
   return (
     <div id="schedule_form">
       <div
