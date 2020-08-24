@@ -52,8 +52,9 @@ const Home = () => {
           <a href="https://srsh.link/facebook" title="Saharsh&#39;s Facebook">
             Facebook
           </a>
-          . If you prefer, you can also reach out to me via email at hello [at]
-          saharsh.tech.
+          . If you prefer, you can also reach out to me via email at <a href="mailto:hello@saharsh.tech" title="Saharsh&#39;s Email">
+          hello [at] saharsh.tech
+          </a>.
         </p>
       </Post>
     </Layout>
