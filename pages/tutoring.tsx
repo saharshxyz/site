@@ -2,7 +2,7 @@ import Layout from '../components/Layout';
 import Post from '../components/Post';
 import CalendlyEmbed from '../components/CalendlyEmbed';
 
-const Tutor = () => {
+const Tutoring = () => {
   return (
     <Layout>
       <Post>
@@ -49,4 +49,4 @@ const Tutor = () => {
   );
 };
 
-export default Tutor;
+export default Tutoring;
