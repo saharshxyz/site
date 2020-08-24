@@ -15,7 +15,10 @@ const Home = () => {
 
         <p>
           As a current high-school senior at{' '}
-          <a href="http://whs.westboroughk12.org" title="Westborough High School">
+          <a
+            href="http://whs.westboroughk12.org"
+            title="Westborough High School"
+          >
             Westborough High School
           </a>
           , the thing at the top of my mind is what I'll be doing after
@@ -52,9 +55,11 @@ const Home = () => {
           <a href="https://srsh.link/facebook" title="Saharsh&#39;s Facebook">
             Facebook
           </a>
-          . If you prefer, you can also reach out to me via email at <a href="mailto:hello@saharsh.tech" title="Saharsh&#39;s Email">
-          hello [at] saharsh.tech
-          </a>.
+          . If you prefer, you can also reach out to me via email at{' '}
+          <a href="mailto:hello@saharsh.tech" title="Saharsh&#39;s Email">
+            hello [at] saharsh.tech
+          </a>
+          .
         </p>
       </Post>
     </Layout>
