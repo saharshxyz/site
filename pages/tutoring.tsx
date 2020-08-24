@@ -1,10 +1,10 @@
-import Footer from '../components/Footer';
+import Layout from '../components/Layout';
 import Post from '../components/Post';
 import CalendlyEmbed from '../components/CalendlyEmbed';
 
 const Tutoring = () => {
   return (
-    <>
+    <Layout>
       <Post>
         <div>
           <p>
@@ -45,8 +45,7 @@ const Tutoring = () => {
           eventName="tutoring?hide_event_type_details=1"
         />
       </Post>
-      <Footer />
-    </>
+    </Layout>
   );
 };
 
