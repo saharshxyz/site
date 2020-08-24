@@ -12,12 +12,12 @@ const Nav = () => {
           @saharshy29
         </a>
       </div>
-      <div className={nav.group}>
-        <Link href="/about">
+      {/* <div className={nav.group}>
+        <Link href="/">
           <a className={nav.link}>About</a>
         </Link>
         <Link href="/thoughts">
-          <a className={nav.link}>Thoughts.</a>
+          <a className={nav.link}>Thoughts</a>
         </Link>
         <Link href="/projects">
           <a className={nav.link}>Projects</a>
@@ -25,7 +25,7 @@ const Nav = () => {
         <Link href="/story">
           <a className={nav.link}>Story</a>
         </Link>
-      </div>
+      </div> */}
     </div>
   );
 };
