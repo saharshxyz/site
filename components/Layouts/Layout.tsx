@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import layout from './Layout.module.scss';
-import Nav from './Nav';
-import Footer from './Footer';
+import Nav from '../Nav';
+import Footer from '../Footer';
 
 const Layout = (props) => {
   return (
