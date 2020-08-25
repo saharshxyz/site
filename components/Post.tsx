@@ -6,7 +6,6 @@ const Post = (props) => {
   return <div className={post.root}>{props.children}</div>;
 };
 
-
 Post.propTypes = {
   children: PropTypes.element.isRequired,
 };
