@@ -1,7 +1,8 @@
 import Head from 'next/head';
+import PropTypes from 'prop-types';
 import layout from './Layout.module.scss';
-import Nav from './Nav';
-import Footer from './Footer';
+import Nav from '../Nav';
+import Footer from '../Footer';
 
 const Layout = (props) => {
   return (
@@ -18,6 +19,10 @@ const Layout = (props) => {
       </div>
     </>
   );
+};
+
+Layout.propTypes = {
+  children: PropTypes.element.isRequired,
 };
 
 export default Layout;
