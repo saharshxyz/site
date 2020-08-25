@@ -29,7 +29,7 @@
     "import/no-unresolved": "off",
     "import/extensions": "off",
     "react/destructuring-assignment": "off",
-    "react/prop-types": "warn",
+    "react/prop-types": "off",
     "react/jsx-one-expression-per-line": "off",
     "no-unused-vars": "off",
     "global-require": "off",

@@ -1,4 +1,4 @@
-import Layout from '../components/Layout';
+import Layout from '../components/Layouts/Layout';
 import Post from '../components/Post';
 import CalendlyEmbed from '../components/CalendlyEmbed';
 
