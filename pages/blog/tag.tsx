@@ -1,15 +1,11 @@
 import Layout from '../../components/Layouts/Layout';
-import Header from '../../components/Blog/Header';
-import Tags from '../../components/Blog/Tags';
 import PostPreview from '../../components/Blog/PostPreview';
 
-const Home = () => {
+const Tag = () => {
   return (
     <Layout>
-      <Header />
-      <hr className="fancy" />
-      <Tags />
-      <PostPreview />
+      <h1>#tag</h1>
+			<PostPreview />
       <PostPreview />
       <PostPreview />
       <PostPreview />
@@ -17,4 +13,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Tag;
