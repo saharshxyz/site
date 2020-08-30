@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Layout from '../components/Layouts/Layout';
-import Post from '../components/Post';
+import Post from '../components/Copy';
 
 const Home = () => {
   return (
