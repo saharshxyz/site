@@ -12,7 +12,7 @@ const Form = () => {
         <div className={form.inline}>
           <input type="text" name="name" placeholder="First Name" />
           {/* <label>First Name</label> */}
-        <input type="submit" className={form.btn} />
+          <input type="submit" className={form.btn} />
         </div>
       </div>
     </div>
