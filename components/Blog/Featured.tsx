@@ -1,7 +1,7 @@
-import featured from './Featured.module.scss';
 import { FaBookmark } from 'react-icons/fa';
-import FeaturedPost from './FeaturedPost'
 import { features } from 'process';
+import featured from './Featured.module.scss';
+import FeaturedPost from './FeaturedPost';
 
 const Featured = () => {
   return (
