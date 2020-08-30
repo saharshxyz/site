@@ -1,14 +1,14 @@
+import Post from 'components/Post';
 import Layout from '../../components/Layouts/Layout';
 import Header from '../../components/Blog/Header';
 import Tags from '../../components/Blog/Tags';
-import PostPreview from '../../components/Blog/PostPreview'
-import Post from 'components/Post';
+import PostPreview from '../../components/Blog/PostPreview';
 
 const Home = () => {
   return (
     <Layout>
       <Header />
-      <hr className="fancy"/>
+      <hr className="fancy" />
       <Tags />
       <PostPreview />
       <PostPreview />
