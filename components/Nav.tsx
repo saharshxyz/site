@@ -25,7 +25,7 @@ const Nav = () => {
         <Link href="/story">
           <a className={nav.link}>Story</a>
         </Link> */}
-      </div> 
+      </div>
     </div>
   );
 };
