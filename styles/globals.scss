@@ -47,14 +47,14 @@ body {
   // For sticky footer
   min-height: 100vh;
 
-  @media  (max-width: breakpoints.$mobile) {
+  @media (max-width: breakpoints.$mobile) {
     // font-size: 1em;
   }
 }
 
 #{headings(1,6)} {
-    font-family: fonts.$serif;
-  }
+  font-family: fonts.$serif;
+}
 
 * {
   padding: 0;
@@ -65,7 +65,49 @@ body {
 a,
 a:visited,
 a:hover,
-a:active{
+a:active {
   color: currentColor;
   text-decoration: none;
+}
+
+hr {
+  border-top: 1px solid colors.$gray;
+  margin: 0.5em 0;
+
+  &.fancy {
+    background: linear-gradient(
+      to left,
+      currentColor calc(50% - 12px),
+      transparent calc(50% - 12px),
+      transparent calc(50% + 12px),
+      currentColor calc(50% + 12px)
+    );
+    background-color: transparent;
+    border: none;
+    height: 0.08rem;
+    overflow: visible;
+    position: relative;
+    color: var(--color--gray);
+    margin: 1.2rem auto;
+
+    &::before,
+    &::after {
+      background: currentColor;
+      content: '';
+      display: block;
+      height: 0.8rem;
+      position: absolute;
+      top: calc(50% - 0.4rem);
+      transform: rotate(22.5deg);
+      width: 0.1rem;
+    }
+
+    &::before {
+      left: calc(50% - 0.25rem);
+    }
+
+    &::after {
+      right: calc(50% - 0.25rem);
+    }
+  }
 }
