@@ -1,0 +1,38 @@
+@use 'styles/colors';
+@use 'styles/breakpoints';
+
+.root {
+	margin-top: 1em;
+	input {
+    background-color: map-get(colors.$background, secondary);
+    padding: 0.5em 1em;
+    width: 100%;
+    color: map-get(colors.$text, primary);
+    border-radius: max(0.3em, 5px);
+    outline: none;
+    border: none;
+    font-size: 1rem;
+
+    &[type='submit'] {
+  background-color: colors.$gray;
+			color: colors.$white;
+    }
+  }
+
+  label {
+    font-size: 0.8rem;
+    padding: 0.25em 1em;
+  }
+}
+
+.group + .group {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.5em;
+}
+
+.inline {
+  display: grid;
+  grid-template-columns: 7fr 3fr;
+  grid-gap: 0.5em;
+}

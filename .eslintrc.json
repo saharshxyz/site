@@ -15,7 +15,7 @@
   "plugins": ["react", "@typescript-eslint", "prettier"],
   "rules": {
     "prettier/prettier": [
-      "warn",
+      "off",
       {
         "trailingComma": "es5",
         "tabWidth": 2,

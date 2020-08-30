@@ -1,0 +1,12 @@
+@use 'styles/colors';
+@use 'styles/breakpoints';
+
+.root {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  @media (max-width: breakpoints.$tablet) {
+		display: flex;
+		flex-direction: column;
+  }
+}
