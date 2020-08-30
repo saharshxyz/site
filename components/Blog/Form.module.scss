@@ -2,8 +2,8 @@
 @use 'styles/breakpoints';
 
 .root {
-	margin-top: 1em;
-	input {
+  margin-top: 1em;
+  input {
     background-color: map-get(colors.$background, secondary);
     padding: 0.5em 1em;
     width: 100%;
@@ -14,8 +14,22 @@
     font-size: 1rem;
 
     &[type='submit'] {
-  background-color: colors.$gray;
-			color: colors.$white;
+      color: colors.$white;
+      background-color: colors.$gray;
+      transition: all 0.1s ease-in-out;
+
+      &:hover,
+      &:active {
+        cursor: pointer;
+      }
+
+      &:hover {
+        transform: scale(1.08);
+      }
+
+      &:active {
+        transform: scale(1);
+      }
     }
   }
 
