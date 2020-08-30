@@ -16,7 +16,7 @@ const Nav = () => {
         <Link href="/">
           <a className={nav.link}>About</a>
         </Link>
-        <Link href="/thoughts">
+        <Link href="/blog">
           <a className={nav.link}>Thoughts</a>
         </Link>
         {/* <Link href="/projects">
