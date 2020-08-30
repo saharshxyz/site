@@ -1,0 +1,32 @@
+@use 'styles/colors';
+@use 'styles/breakpoints';
+@use 'styles/functions' as *;
+
+$radial-size: 0.5px;
+
+.root {
+  margin: 1em;
+  margin-top: 0;
+  background-image: radial-gradient(colors.$primary $radial-size, transparent $radial-size);
+  background-size: css-calc(10 * $radial-size) css-calc(10 * $radial-size);
+}
+
+.wrapper {
+	background-color: map-get(colors.$background, primary);
+	transform: translate(20px, -20px);
+	padding-left: 0.5em;
+	padding-bottom: 0.5em;
+	padding-top: 7px;
+}
+
+.icon {
+	font-size: 0.85em;
+}
+
+.posts {
+	margin-top: 0.5em;
+}
+.post + .post {
+	margin-top: 0.75em;
+}
+

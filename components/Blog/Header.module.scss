@@ -4,6 +4,7 @@
 .root {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  // gap: 1em;
 
   @media (max-width: breakpoints.$tablet) {
 		display: flex;
