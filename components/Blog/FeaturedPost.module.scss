@@ -1,0 +1,9 @@
+@use 'styles/colors';
+
+.root {
+	font-size: 0.8em;
+
+	p {
+		color: colors.$gray;
+	}
+}

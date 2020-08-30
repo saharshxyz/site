@@ -10,6 +10,10 @@
   @return m#{a}x(#{$numbers});
 }
 
+@function css-calc($numbers...) {
+  @return c#{a}lc(#{$numbers});
+}
+
 @function headings($from:1, $to:6) {
     @if $from == $to {
         @return 'h#{$from}';
