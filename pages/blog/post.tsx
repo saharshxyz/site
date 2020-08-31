@@ -1,21 +1,22 @@
-import Layout from '../../components/Layouts/Layout';
-import Copy from '../../components/Copy';
+import { GetStaticProps } from 'next';
+// import Layout from '../../components/Layouts/Layout';
+// import Copy from '../../components/Copy';
 
-const Post = () => {
+import { getPosts } from '../api/posts';
+
+const Post = (props) => {
   return (
-    <Layout>
-      <h1>Post about something interesting</h1>
-      <p>Aug 12 | 5 min | #stuff #things #life</p>
-      <hr />
-      <Copy>
-        <h1>Hello</h1>
-        <p>Hi</p>
-        <h2>Sup</h2>
-        <p>Nothing</p>
-        <p>ok</p>
-      </Copy>
-    </Layout>
+    <ul>
+      {props.posts.map((post) => (
+        <li key={post.id}>{post.title}</li>
+      ))}
+    </ul>
   );
 };
 
 export default Post;
+
+export const getStaticProps = async () => {
+  const posts = await getPosts();
+  return { props: { posts } };
+};

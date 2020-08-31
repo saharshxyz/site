@@ -36,7 +36,10 @@
     "react/jsx-props-no-spreading": "off",
     "jsx-a11y/anchor-is-valid": "off",
     "react/no-unescaped-entities": "off",
-    "react/jsx-indent": "warn"
+    "react/jsx-indent": "warn",
+    "import/prefer-default-export": "off",
+    "no-return-await": "off",
+    "no-console": "warn"
   },
   "ignorePatterns": [
     ".DS_Store",
