@@ -18,7 +18,7 @@ const Home = (props) => {
           title={post.title}
           pubDate={post.dateFormatted}
           readTime={`${post.reading_time} mins`}
-          // tags={post.tags[0].name}
+          tags={post.tagList}
           excerpt={post.excerpt}
         />
       ))}
@@ -32,14 +32,14 @@ export const getStaticProps = async () => {
   const posts = await getPosts();
 
   posts.map((post) => {
-    const options = {
+    post.dateFormatted = new Intl.DateTimeFormat('en-US', {
       month: 'short',
       day: 'numeric',
-    };
+    }).format(new Date(post.published_at));
+  });
 
-    post.dateFormatted = new Intl.DateTimeFormat('en-US', options).format(
-      new Date(post.published_at)
-    );
+  posts.map((post) => {
+    post.tagList = post.tags.map((tag) => tag.name).join(' ');
   });
 
   return { props: { posts } };
