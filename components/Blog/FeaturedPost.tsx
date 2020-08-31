@@ -1,10 +1,10 @@
 import styles from './FeaturedPost.module.scss';
 
-const FeaturedPost = () => {
+const FeaturedPost = (props) => {
   return (
     <div className={styles.root}>
-      <h3>Lorem ipsum dolor sit amet.</h3>
-      <p>#tag 1 #tag2 #tag3</p>
+      <h3>{props.title}</h3>
+  <p>{props.tags}</p>
     </div>
   );
 };

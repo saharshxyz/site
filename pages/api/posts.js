@@ -18,3 +18,5 @@ export async function getPosts() {
       console.error(err);
     });
 }
+
+export default getPosts();

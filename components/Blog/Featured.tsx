@@ -1,28 +1,28 @@
 import { FaBookmark } from 'react-icons/fa';
-import { features } from 'process';
-import featured from './Featured.module.scss';
 import FeaturedPost from './FeaturedPost';
+import featured from './Featured.module.scss';
 
-const Featured = () => {
+import { PostsProvider } from '../../context/postContext';
+import { getPosts } from '../../pages/api/posts';
+
+const Featured = (props) => {
   return (
+    <PostsProvider>
     <div className={featured.root}>
       <div className={featured.wrapper}>
         <h2>
-          <FaBookmark className={featured.icon} /> Featured
+          <FaBookmark className={featured.icon} />{' '}Featured
         </h2>
         <div className={featured.posts}>
-          <div className={featured.post}>
-            <FeaturedPost />
-          </div>
-          <div className={featured.post}>
-            <FeaturedPost />
-          </div>
-          <div className={featured.post}>
-            <FeaturedPost />
-          </div>
+          {props.posts.map((post) => (
+            <div className={featured.post}>
+              <FeaturedPost title={post.title} />
+            </div> 
+          ))}
         </div>
       </div>
     </div>
+    </PostsProvider>
   );
 };
 
