@@ -4,7 +4,7 @@ import Layout from '../../components/Layouts/Layout';
 import Header from '../../components/Blog/Header';
 import PostPreview from '../../components/Blog/PostPreview';
 
-import {PostsProvider } from '../../context/postContext'
+import { PostsProvider } from '../../context/postContext';
 import { getPosts } from '../api/posts';
 
 const Home = (props) => {
@@ -40,14 +40,12 @@ export const getStaticProps = async () => {
   });
 
   posts.map((post) => {
-    post.tagList = post.tags
-      .map((tag) => tag.name).
-      join(' ');
+    post.tagList = post.tags.map((tag) => tag.name).join(' ');
   });
 
-  return { 
-    props: { 
-      posts 
-    } 
+  return {
+    props: {
+      posts,
+    },
   };
 };
