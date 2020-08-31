@@ -1,10 +1,13 @@
+import { useContext } from 'react';
+
 import { FaBookmark } from 'react-icons/fa';
 import FeaturedPost from './FeaturedPost';
 import featured from './Featured.module.scss';
 
-import { getPosts } from '../../pages/api/posts';
+import PostsContext from '../../pages/blog/index';
 
 const Featured = (props) => {
+  const posts = useContext(PostsContext);
   return (
     <div className={featured.root}>
       <div className={featured.wrapper}>
