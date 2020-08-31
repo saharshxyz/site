@@ -1,13 +1,9 @@
 import { createContext } from 'react';
 
-let posts = {};
+const posts = {};
 
 export const PostContext = createContext(posts);
 
 export const PostsProvider = ({ children }) => {
-  return (
-    <PostContext.Provider>
-      {children}
-    </PostContext.Provider>
-  );
+  return <PostContext.Provider>{children}</PostContext.Provider>;
 };
