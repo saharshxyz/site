@@ -2,7 +2,6 @@ import { GetStaticProps } from 'next';
 
 import Layout from '../../components/Layouts/Layout';
 import Header from '../../components/Blog/Header';
-import Tags from '../../components/Blog/Tags';
 import PostPreview from '../../components/Blog/PostPreview';
 
 import { getPosts } from '../api/posts';
@@ -12,7 +11,6 @@ const Home = (props) => {
     <Layout>
       <Header />
       <hr className="fancy" />
-      <Tags />
       {props.posts.map((post) => (
         <PostPreview
           title={post.title}
