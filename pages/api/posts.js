@@ -10,9 +10,11 @@ const api = new GhostContentAPI({
 export async function getPosts() {
   return await api.posts
     .browse({
+      include: 'tags',
       limit: 'all',
     })
     .catch((err) => {
+      // eslint-disable-next-line no-console
       console.error(err);
     });
 }
