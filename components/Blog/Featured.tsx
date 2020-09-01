@@ -4,9 +4,9 @@ import { FaBookmark } from 'react-icons/fa';
 import FeaturedPost from './FeaturedPost';
 import featured from './Featured.module.scss';
 
-import PostsContext from '../../pages/blog/index';
+import { PostsContext } from '../../pages/blog/index';
 
-const Featured = (props) => {
+const Featured = () => {
   const posts = useContext(PostsContext);
   return (
     <div className={featured.root}>
@@ -15,7 +15,7 @@ const Featured = (props) => {
           <FaBookmark className={featured.icon} /> Featured
         </h2>
         <div className={featured.posts}>
-          {props.posts.map((post) => (
+          {posts.map((post) => (
             <div className={featured.post}>
               <FeaturedPost title={post.title} />
             </div>

@@ -9,13 +9,14 @@ import { getPosts } from '../api/posts';
 
 interface Post {
   Post: [];
+  title: string;
 }
 
-const PostsContext = createContext<Post[]>([]);
+export const PostsContext = createContext<Post[]>([]);
 
 const Home = (props) => {
   return (
-    <PostsContext.Provider value={props.post}>
+    <PostsContext.Provider value={props.posts}>
       <Layout>
         <Header />
         <hr className="fancy" />
