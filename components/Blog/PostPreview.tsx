@@ -1,6 +1,6 @@
-import postPreview from './PostPreview.module.scss';
 import Link from 'next/link';
 import { FaExternalLinkAlt } from 'react-icons/fa';
+import postPreview from './PostPreview.module.scss';
 
 const PostPreview = (props) => {
   return (
