@@ -1,7 +1,6 @@
+import { GetStaticProps, GetStaticPaths } from 'next';
 import Layout from '../../components/Layouts/Layout';
 import Copy from '../../components/Copy';
-
-import { GetStaticProps, GetStaticPaths } from 'next';
 
 import { getPosts } from '../api/posts';
 
