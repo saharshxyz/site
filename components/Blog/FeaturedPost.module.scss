@@ -1,9 +1,13 @@
 @use 'styles/colors';
 
 .root {
-	font-size: 0.8em;
+  font-size: 0.8em;
 
-	p {
-		color: colors.$gray;
-	}
+  p {
+    color: colors.$gray;
+  }
+
+  h3:hover {
+    text-decoration: underline;
+  }
 }

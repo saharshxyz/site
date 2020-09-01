@@ -13,6 +13,8 @@ interface Post {
   featured: boolean;
   tags: any;
   tagList: string;
+  uuid: string;
+  slug: string;
 }
 
 export const PostsContext = createContext<Post[]>([]);
@@ -25,6 +27,8 @@ const Home = (props) => {
         <hr className="fancy" />
         {props.posts.map((post) => (
           <PostPreview
+            key={post.uuid}
+            slug={post.slug}
             title={post.title}
             pubDate={post.dateFormatted}
             readTime={`${post.reading_time} mins`}

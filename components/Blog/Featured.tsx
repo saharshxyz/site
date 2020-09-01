@@ -26,7 +26,12 @@ const Featured = () => {
         <div className={featured.posts}>
           {featuredPosts.map((post) => (
             <div className={featured.post}>
-              <FeaturedPost title={post.title} tags={post.tagList} />
+              <FeaturedPost
+                key={post.uuid}
+                slug={post.slug}
+                title={post.title}
+                tags={post.tagList}
+              />
             </div>
           ))}
         </div>
