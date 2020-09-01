@@ -10,6 +10,9 @@ import { getPosts } from '../api/posts';
 interface Post {
   Post: [];
   title: string;
+  featured: boolean;
+  tags: any;
+  tagList: string;
 }
 
 export const PostsContext = createContext<Post[]>([]);

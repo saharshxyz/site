@@ -8,6 +8,15 @@ import { PostsContext } from '../../pages/blog/index';
 
 const Featured = () => {
   const posts = useContext(PostsContext);
+  const featuredPosts = posts
+    .filter((post) => post.featured === true)
+    .sort(() => 0.5 - Math.random())
+    .slice(0, 3);
+
+  featuredPosts.map((post) => {
+    post.tagList = post.tags.map((tag) => tag.name).join(' ');
+  });
+
   return (
     <div className={featured.root}>
       <div className={featured.wrapper}>
@@ -15,9 +24,9 @@ const Featured = () => {
           <FaBookmark className={featured.icon} /> Featured
         </h2>
         <div className={featured.posts}>
-          {posts.map((post) => (
+          {featuredPosts.map((post) => (
             <div className={featured.post}>
-              <FeaturedPost title={post.title} />
+              <FeaturedPost title={post.title} tags={post.tagList} />
             </div>
           ))}
         </div>
