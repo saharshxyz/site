@@ -1,7 +1,7 @@
 import { GetStaticProps, GetStaticPaths } from 'next';
+import { useRouter } from 'next/router';
 import Layout from '../../components/Layouts/Layout';
 import Copy from '../../components/Copy';
-import { useRouter } from 'next/router';
 
 import { getPosts } from '../api/posts';
 
