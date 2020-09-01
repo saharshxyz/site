@@ -1,16 +1,21 @@
 import { GetStaticProps, GetStaticPaths } from 'next';
 import Layout from '../../components/Layouts/Layout';
 import Copy from '../../components/Copy';
+import { useRouter } from 'next/router';
 
 import { getPosts } from '../api/posts';
 
 const Post = (props) => {
+  const { slug } = useRouter().query;
+  let post = props.posts.filter((p) => p.slug === slug);
+  post = post[0];
+
   return (
     <Layout>
-      <h1>{props.post.title}</h1>
-      <p>{props.post.tagList}e</p>
+      <h1>{post.title}</h1>
+      <p>{post.tagList}</p>
       <hr />
-      <Copy>{props.post.html}</Copy>
+      <Copy>{post.html}</Copy>
     </Layout>
   );
 };
