@@ -42,7 +42,18 @@
     "array-callback-return": "off",
     "no-param-reassign": "off",
     "no-plusplus": "off",
-    "prefer-const": "warn"
+    "prefer-const": "warn",
+    "prefer-destructuring": [
+      "warn",
+      {
+        "array": false,
+        "object": true
+      },
+      {
+        "enforceForRenamedProperties": false
+      }
+    ],
+    "react/no-danger": "off"
   },
   "ignorePatterns": [
     ".DS_Store",

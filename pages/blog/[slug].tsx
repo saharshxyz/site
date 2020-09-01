@@ -15,7 +15,9 @@ const Post = (props) => {
       <h1>{post.title}</h1>
       <p>{post.tagList}</p>
       <hr />
-      <Copy>{post.html}</Copy>
+      <Copy>
+        <div dangerouslySetInnerHTML={{ __html: post.html }} />
+      </Copy>
     </Layout>
   );
 };
