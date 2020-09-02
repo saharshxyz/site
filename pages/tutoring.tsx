@@ -1,5 +1,5 @@
 import Layout from '../components/Layouts/Layout';
-import Post from '../components/Post';
+import Post from '../components/Copy';
 import CalendlyEmbed from '../components/CalendlyEmbed';
 
 const Tutoring = () => {
