@@ -5,7 +5,7 @@ import Footer from '../Footer';
 
 const Layout = (props) => {
   return (
-    <>
+    <html lang="en">
       <Head>
         <title>Saharsh Yeruva | @saharshy29</title>
       </Head>
@@ -16,7 +16,7 @@ const Layout = (props) => {
         </div>
         <Footer />
       </div>
-    </>
+    </html>
   );
 };
 
