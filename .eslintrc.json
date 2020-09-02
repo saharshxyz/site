@@ -36,24 +36,7 @@
     "react/jsx-props-no-spreading": "off",
     "jsx-a11y/anchor-is-valid": "off",
     "react/no-unescaped-entities": "off",
-    "react/jsx-indent": "warn",
-    "no-return-await": "off",
-    "no-console": "warn",
-    "array-callback-return": "off",
-    "no-param-reassign": "off",
-    "no-plusplus": "off",
-    "prefer-const": "warn",
-    "prefer-destructuring": [
-      "warn",
-      {
-        "array": false,
-        "object": true
-      },
-      {
-        "enforceForRenamedProperties": false
-      }
-    ],
-    "react/no-danger": "off"
+    "react/jsx-indent": "warn"
   },
   "ignorePatterns": [
     ".DS_Store",
