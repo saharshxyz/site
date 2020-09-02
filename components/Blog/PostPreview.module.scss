@@ -1,11 +1,20 @@
 @use 'styles/colors';
 
 .root {
-	font-size: 0.8em;
-	max-width: 65ch;
-	margin: 1.5em auto;
+  font-size: 0.8em;
+  max-width: 65ch;
+  margin: 1.5em auto;
+
+  h2:hover {
+    text-decoration: underline;
+  }
 }
 
 .meta {
-	color: colors.$gray;
+  color: colors.$gray;
+}
+
+.icon {
+  font-size: 0.8em;
+  margin-left: 0.25em;
 }

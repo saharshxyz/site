@@ -1,9 +1,22 @@
+import { useContext } from 'react';
+
 import { FaBookmark } from 'react-icons/fa';
-import { features } from 'process';
-import featured from './Featured.module.scss';
 import FeaturedPost from './FeaturedPost';
+import featured from './Featured.module.scss';
+
+import { PostsContext } from '../../pages/blog/index';
 
 const Featured = () => {
+  const posts = useContext(PostsContext);
+  const featuredPosts = posts
+    .filter((post) => post.featured === true)
+    .sort(() => 0.5 - Math.random())
+    .slice(0, 3);
+
+  featuredPosts.map((post) => {
+    post.tagList = post.tags.map((tag) => tag.name).join(' ');
+  });
+
   return (
     <div className={featured.root}>
       <div className={featured.wrapper}>
@@ -11,15 +24,16 @@ const Featured = () => {
           <FaBookmark className={featured.icon} /> Featured
         </h2>
         <div className={featured.posts}>
-          <div className={featured.post}>
-            <FeaturedPost />
-          </div>
-          <div className={featured.post}>
-            <FeaturedPost />
-          </div>
-          <div className={featured.post}>
-            <FeaturedPost />
-          </div>
+          {featuredPosts.map((post) => (
+            <div className={featured.post}>
+              <FeaturedPost
+                key={post.uuid}
+                slug={post.slug}
+                title={post.title}
+                tags={post.tagList}
+              />
+            </div>
+          ))}
         </div>
       </div>
     </div>

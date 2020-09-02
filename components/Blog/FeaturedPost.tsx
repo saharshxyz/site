@@ -1,11 +1,17 @@
+import Link from 'next/link';
+
 import styles from './FeaturedPost.module.scss';
 
-const FeaturedPost = () => {
+const FeaturedPost = (props) => {
   return (
-    <div className={styles.root}>
-      <h3>Lorem ipsum dolor sit amet.</h3>
-      <p>#tag 1 #tag2 #tag3</p>
-    </div>
+    <Link as={`/blog/${props.slug}`} href="/blog/[slug]">
+      <a>
+        <div className={styles.root}>
+          <h3>{props.title}</h3>
+          <p>{props.tags}</p>
+        </div>
+      </a>
+    </Link>
   );
 };
 
