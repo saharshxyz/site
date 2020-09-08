@@ -9,7 +9,7 @@ const Home = () => {
         <h1>Hey, I’m Saharsh</h1>
 
         <p>
-          … a 16-year-old from Central Massachusetts.{' '}
+          … a kid from Central Massachusetts.{' '}
           <strong>I make websites, write blog posts, and read [a lot].</strong>
         </p>
 
@@ -30,7 +30,7 @@ const Home = () => {
 
         <p>
           I am on and around most places on the web — you&#39;ll usually find me
-          going by <em>@saharshy29</em>. Here are some places that I am at least
+          going by <em>@saharsh</em>. Here are some places that I am at least
           somewhat active on:{' '}
           <a href="https://srsh.link/twitter" title="Saharsh&#39;s Twitter">
             Twitter
