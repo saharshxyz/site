@@ -1139,10 +1139,10 @@
   resolved "https://registry.yarnpkg.com/@types/prop-types/-/prop-types-15.7.3.tgz#2ab0d5da2e5815f94b0b9d4b95d1e5f243ab2ca7"
   integrity sha512-KfRL3PuHmqQLOG+2tGpRO26Ctg+Cq1E01D2DMriKEATHgWLfeNDmq9e29Q9WIky0dQ3NPkd1mzYH8Lm936Z9qw==
 
-"@types/react@^16.9.50":
-  version "16.9.50"
-  resolved "https://registry.yarnpkg.com/@types/react/-/react-16.9.50.tgz#cb5f2c22d42de33ca1f5efc6a0959feb784a3a2d"
-  integrity sha512-kPx5YsNnKDJejTk1P+lqThwxN2PczrocwsvqXnjvVvKpFescoY62ZiM3TV7dH1T8lFhlHZF+PE5xUyimUwqEGA==
+"@types/react@^16.9.51":
+  version "16.9.51"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-16.9.51.tgz#f8aa51ffa9996f1387f63686696d9b59713d2b60"
+  integrity sha512-lQa12IyO+DMlnSZ3+AGHRUiUcpK47aakMMoBG8f7HGxJT8Yfe+WE128HIXaHOHVPReAW0oDS3KAI0JI2DDe1PQ==
   dependencies:
     "@types/prop-types" "*"
     csstype "^3.0.2"
@@ -6185,10 +6185,10 @@ sass-loader@8.0.2:
     schema-utils "^2.6.1"
     semver "^6.3.0"
 
-sass@^1.26.11:
-  version "1.26.11"
-  resolved "https://registry.yarnpkg.com/sass/-/sass-1.26.11.tgz#0f22cc4ab2ba27dad1d4ca30837beb350b709847"
-  integrity sha512-W1l/+vjGjIamsJ6OnTe0K37U2DBO/dgsv2Z4c89XQ8ZOO6l/VwkqwLSqoYzJeJs6CLuGSTRWc91GbQFL3lvrvw==
+sass@^1.26.12:
+  version "1.26.12"
+  resolved "https://registry.yarnpkg.com/sass/-/sass-1.26.12.tgz#79eddaa1773fff32ccf19e00d1ce380fc2afc7d0"
+  integrity sha512-hmSwtBOWoS9zwe0yAS+QmaseVCUELiGV22gXHDR7+9stEsVuEuxfY1GhC8XmUpC+Ir3Hwq7NxSUNbnmkznnF7g==
   dependencies:
     chokidar ">=2.0.0 <4.0.0"
 
