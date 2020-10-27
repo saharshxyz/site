@@ -12,7 +12,7 @@ const Footer = () => {
 			</h1>
 			<p>
 				<a href='https://sahar.sh/t' className={footer.username}>
-					@saharshy29
+					@saharshxyz
 				</a>{' '}
 				|{' '}
 				<a href='https://sahar.sh/gh'>
