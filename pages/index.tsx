@@ -30,7 +30,7 @@ const Home = () => {
 
 				<p>
 					I am on and around most places on the web — you&#39;ll usually find me
-					going by <em>@saharsh</em>. Here are some places that I am at least
+					going by <em>@saharshxyz</em>. Here are some places that I am at least
 					somewhat active on:{' '}
 					<a href='https://sahar.sh/t' title='Saharsh&#39;s Twitter'>
 						Twitter
