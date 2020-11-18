@@ -22,8 +22,8 @@ const Home = () => {
             Westborough High School
           </a>
           , the thing at the top of my mind is what I'll be doing after
-          high-school. As of now, my plan is to pursue the intersection of
-          Computer Science, Philosophy, and Psychology.
+          high-school. As of now, my plan is to explore the intersection of
+          Computer Science, Philosophy, Psychology, and Economics.
         </p>
 
         <h2>Say Hi!</h2>
