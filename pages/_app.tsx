@@ -12,7 +12,12 @@ export default function App({ Component, pageProps }: AppProps) {
           rel="preconnect"
           href="https://fonts.gstatic.com"
         />
-        <script async defer data-website-id="ded82c91-5872-4e84-b800-8b9e72a05bed" src="https://analytics.saharsh.xyz/umami.js"></script>
+        <script
+          async
+          defer
+          data-website-id="ded82c91-5872-4e84-b800-8b9e72a05bed"
+          src="https://analytics.saharsh.xyz/umami.js"
+        />
       </Head>
       <Component {...pageProps} />
     </>
