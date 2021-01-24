@@ -6,10 +6,8 @@ const Home = () => {
   return (
     <Layout>
       <Post>
-        <h1>Hey, I’m Saharsh</h1>
-
         <p>
-          … a kid from Central Massachusetts.{' '}
+          Hey, I'm a kid from Central Massachusetts.{' '}
           <strong>I make websites, write blog posts, and read [a lot].</strong>
         </p>
 
