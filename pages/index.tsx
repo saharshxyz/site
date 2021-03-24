@@ -6,26 +6,8 @@ const Home = () => (
   <Layout>
     <Post>
       <p>
-        Hey, I'm a kid from Central Massachusetts.{' '}
-        <strong>I make websites, write blog posts, and read [a lot].</strong>
-      </p>
-
-      <p>
-        As a current high-school senior at{' '}
-        <a href="http://whs.westboroughk12.org" title="Westborough High School">
-          Westborough High School
-        </a>
-        , the thing at the top of my mind is what I'll be doing after
-        high-school. As of now, my plan is to explore the intersection of
-        Computer Science, Philosophy, Psychology, and Economics.
-      </p>
-
-      <h2>Say Hi!</h2>
-
-      <p>
-        I am on and around most places on the web — you&#39;ll usually find me
-        going by <em>@saharshxyz</em>. Here are some places that I am at least
-        somewhat active on:{' '}
+        Hey, this is Saharsh and you&#39;ll usually find me
+        going by <em>@saharshxyz</em> on the internet. Here are some of the places that you can find me:{' '}
         <a href="https://sahar.sh/t" title="Saharsh&#39;s Twitter">
           Twitter
         </a>
@@ -41,15 +23,7 @@ const Home = () => (
         <a href="https://sahar.sh/ln" title="Saharsh&#39;s Linkedin">
           Linkedin
         </a>
-        , and{' '}
-        <a href="https://sahar.sh/m" title="Saharsh on Messenger">
-          Messenger
-        </a>{' '}
-        /{' '}
-        <a href="https://sahar.sh/fb" title="Saharsh&#39;s Facebook">
-          Facebook
-        </a>
-        . If you prefer, you can also reach out to me via email at{' '}
+        . If you prefer, you can also reach out to me via email:{' '}
         <a href="mailto:hello@saharsh.tech" title="Saharsh&#39;s Email">
           hello [at] saharsh.tech
         </a>
