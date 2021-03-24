@@ -14,7 +14,6 @@ const Layout = (props) => {
           <Nav />
           {props.children}
         </div>
-        <Footer />
       </div>
     </html>
   );
