@@ -6,8 +6,9 @@ const Home = () => (
   <Layout>
     <Post>
       <p>
-        Hey, this is Saharsh and you&#39;ll usually find me
-        going by <em>@saharshxyz</em> on the internet. Here are some of the places that you can find me:{' '}
+        Hey, this is Saharsh and you&#39;ll usually find me going by{' '}
+        <em>@saharshxyz</em> on the internet. Here are some of the places that
+        you can find me:{' '}
         <a href="https://sahar.sh/t" title="Saharsh&#39;s Twitter">
           Twitter
         </a>
