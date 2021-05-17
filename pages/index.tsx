@@ -6,8 +6,7 @@ const Home = () => (
   <Layout>
     <Post>
       <p>
-        Usually find me <em>@saharshxyz</em> on the internet.
-        <a href="https://sahar.sh/t" title="Saharsh&#39;s Twitter">
+        Usually <em>@saharshxyz</em> on the internet. <a href="https://sahar.sh/t" title="Saharsh&#39;s Twitter">
           Twitter
         </a>
         ,{' '}
@@ -21,8 +20,8 @@ const Home = () => (
         , and <a href="https://sahar.sh/ln" title="Saharsh&#39;s Linkedin">Linkedin
         </a>
         . Email:{' '}
-        <a href="mailto:hello@saharsh.tech" title="Saharsh&#39;s Email">
-          hello [at] saharsh.tech
+        <a href="mailto:hello@saharsh.xyz" title="Saharsh&#39;s Email">
+          hello [at] saharsh.xyz
         </a>
         .
       </p>
