@@ -22,12 +22,13 @@ const Home = () => (
         <a href="https://sahar.sh/ln" title="Saharsh&#39;s Linkedin">
           Linkedin
         </a>
-        .</p><p>Email:{' '}
-        <a href="mailto:hello@saharsh.xyz" title="Saharsh&#39;s Email">
+        .
+      </p><p>Email:{' '}
+          <a href="mailto:hello@saharsh.xyz" title="Saharsh&#39;s Email">
           hello [at] saharsh.xyz
         </a>
-      .</p>
-      
+          .</p>
+      </p>
     </Post>
   </Layout>
 );
