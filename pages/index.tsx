@@ -18,7 +18,7 @@ const Home = () => (
         <a href="https://sahar.sh/ig" title="Saharsh&#39;s Intagram">
           Instagram
         </a>
-        , and{' '}
+        ,{' '}
         <a href="https://sahar.sh/ln" title="Saharsh&#39;s Linkedin">
           Linkedin
         </a>
