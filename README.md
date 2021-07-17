@@ -1,3 +1,3 @@
-# [saharsh.tech](https://saharsh.tech)
+# [saharsh.xyz](https://saharsh.xyz)
 
-Source code for [saharsh.tech](https://saharsh.tech). Built using Nextjs. Design inspiration from [Linus](https://thesephist.com).
+Source code for [saharsh.xyz]https://saharsh.xyz). Built using Nextjs.
