@@ -1,18 +1,17 @@
 import Link from 'next/link';
 import nav from './Nav.module.scss';
 
-const Nav = () => {
-  return (
-    <div className={nav.root}>
-      <div className={nav.group}>
-        <Link href="/">
-          <a className={nav.name}>Saharsh Yeruva</a>
-        </Link>
-        <a href="https://sahar.sh/twitter" className={nav.username}>
-          @saharshxyz
-        </a>
-      </div>
-      {/* <div className={nav.group}>
+const Nav = () => (
+  <div className={nav.root}>
+    <div className={nav.group}>
+      <Link href="/">
+        <a className={nav.name}>Saharsh Yeruva</a>
+      </Link>
+      <a href="https://sahar.sh/twitter" className={nav.username}>
+        @saharshxyz
+      </a>
+    </div>
+    {/* <div className={nav.group}>
         <Link href="/">
           <a className={nav.link}>About</a>
         </Link>
@@ -26,8 +25,7 @@ const Nav = () => {
           <a className={nav.link}>Story</a>
         </Link>
       </div> */}
-    </div>
-  );
-};
+  </div>
+);
 
 export default Nav;
