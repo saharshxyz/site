@@ -8,7 +8,7 @@ const Nav = () => {
         <Link href="/">
           <a className={nav.name}>Saharsh Yeruva</a>
         </Link>
-        <a href="https://srsh.link/twitter" className={nav.username}>
+        <a href="https://sahar.sh/twitter" className={nav.username}>
           @saharshxyz
         </a>
       </div>
