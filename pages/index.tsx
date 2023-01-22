@@ -6,8 +6,8 @@ const Home = () => (
   <Layout>
     <Post>
       <p>
-        <a href="mailto:sup@sahar.sh" title="Saharsh&#39;s Email">
-          sup [at] sahar.sh{' '}
+        <a href="mailto:hey@sahar.sh" title="Saharsh&#39;s Email">
+          hey [at] sahar.sh{' '}
         </a>
       </p>
     </Post>
