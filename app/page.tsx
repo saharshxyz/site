@@ -1,24 +1,22 @@
 import React from "react";
-import { FaGithub, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import {
+  FaGithub,
+  FaInstagram,
+  FaLinkedinIn,
+  FaRegFilePdf,
+} from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { HiOutlineMail } from "react-icons/hi";
 import IconBadge from "@/components/IconBadges";
 
 export default function Home() {
   const iconBadges = [
-    { icon: FaXTwitter, text: "Twitter", href: "https://x.com/saharshxyz" },
-    { icon: HiOutlineMail, text: "Email", href: "mailto:yeruva@saharsh.xyz" },
-    { icon: FaGithub, text: "Github", href: "https://github.com/saharshxyz" },
-    {
-      icon: FaInstagram,
-      text: "Instagram",
-      href: "https://instagram.com/saharshxyz",
-    },
-    {
-      icon: FaLinkedinIn,
-      text: "Linkedin",
-      href: "https://www.linkedin.com/in/saharshxyz/",
-    },
+    { icon: FaXTwitter, text: "Twitter", link: "x" },
+    { icon: HiOutlineMail, text: "Email", link: "mailto:yeruva@saharsh.xyz" },
+    { icon: FaGithub, text: "Github", link: "gh" },
+    { icon: FaInstagram, text: "Instagram", link: "ig" },
+    { icon: FaLinkedinIn, text: "Linkedin", link: "ln" },
+    { icon: FaRegFilePdf, text: "Resume", link: "resume" },
   ];
 
   return (
@@ -36,7 +34,7 @@ export default function Home() {
             key={index}
             icon={badge.icon}
             text={badge.text}
-            href={badge.href}
+            link={badge.link}
           />
         ))}
       </ul>
