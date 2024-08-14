@@ -29,7 +29,8 @@ export default function Home() {
         Statistics, Linguistics, Philosophy, and Psychology.
       </p>
       <p>Prev: Chewy</p>
-      <div className="mt-2 flex flex-wrap gap-2">
+      <p>Would love to talk &mdash; please reach out.</p>
+      <ul className="mt-2 flex flex-wrap gap-2">
         {iconBadges.map((badge, index) => (
           <IconBadge
             key={index}
@@ -38,7 +39,7 @@ export default function Home() {
             href={badge.href}
           />
         ))}
-      </div>
+      </ul>
     </main>
   );
 }

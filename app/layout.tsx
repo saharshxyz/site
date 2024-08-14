@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import { IBM_Plex_Sans, IBM_Plex_Mono } from "next/font/google";
 import "@/styles/globals.css";
 
@@ -36,6 +38,8 @@ export default function RootLayout({
       <body className="flex items-center justify-center">
         <div className="mt-2 min-h-screen w-full max-w-prose p-3 pt-0">
           {children}
+          <Analytics />
+          <SpeedInsights />
         </div>
       </body>
     </html>
