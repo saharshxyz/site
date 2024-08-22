@@ -16,7 +16,6 @@ export default function Home() {
     { icon: FaGithub, text: "Github", link: "gh" },
     { icon: FaInstagram, text: "Instagram", link: "ig" },
     { icon: FaLinkedinIn, text: "Linkedin", link: "ln" },
-    { icon: FaRegFilePdf, text: "Resume", link: "resume" },
   ];
 
   return (
