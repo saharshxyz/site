@@ -3,7 +3,6 @@ import {
   FaGithub,
   FaInstagram,
   FaLinkedinIn,
-  FaRegFilePdf,
 } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { HiOutlineMail } from "react-icons/hi";
@@ -22,8 +21,8 @@ export default function Home() {
     <main>
       <h1>Saharsh Yeruva</h1>
       <p>
-        Student at UMass Amherst studying Computer Science, Economics, Math and
-        Statistics, Linguistics, Philosophy, and Psychology.
+        Student studying Computational Cognitive Science (Computer Science, Economics, Math and
+        Statistics, Linguistics, Philosophy, and Psychology).
       </p>
       <p>Prev: Chewy</p>
       <p>Would love to talk &mdash; please reach out.</p>
