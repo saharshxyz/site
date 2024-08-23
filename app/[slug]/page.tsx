@@ -2,7 +2,6 @@ import { redirect } from "next/navigation";
 
 const urlMap: Record<string, string> = {
   email: "mailto:yeruva@saharsh.xyz",
-  resume: "https://saharsh.xyz/resume.pdf",
   pp: "https://www.paypal.com/paypalme/saharshy",
   elon: "https://youtu.be/-BMgkHvdXm4",
   venmo: "https://www.venmo.com/saharshxyz",
