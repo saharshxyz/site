@@ -24,7 +24,6 @@ export default function Home() {
         Student studying Computational Cognitive Science (Computer Science, Economics, Math and
         Statistics, Linguistics, Philosophy, and Psychology).
       </p>
-      <p>Prev: Chewy</p>
       <p>Would love to talk &mdash; please reach out.</p>
       <ul className="mt-2 flex flex-wrap gap-2">
         {iconBadges.map((badge, index) => (
