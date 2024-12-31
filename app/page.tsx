@@ -21,10 +21,9 @@ export default function Home() {
     <main>
       <h1>Saharsh Yeruva</h1>
       <p>
-        Student studying Computational Cognitive Science (Computer Science, Economics, Math and
+        Studying Computational Cognitive Science (Computer Science, Economics, Math and
         Statistics, Linguistics, Philosophy, and Psychology).
       </p>
-      <p>Would love to talk &mdash; please reach out.</p>
       <ul className="mt-2 flex flex-wrap gap-2">
         {iconBadges.map((badge, index) => (
           <IconBadge
