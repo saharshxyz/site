@@ -11,7 +11,6 @@ import IconBadge from "@/components/IconBadges";
 export default function Home() {
   const iconBadges = [
     { icon: FaXTwitter, text: "Twitter", link: "x" },
-    { icon: HiOutlineMail, text: "Email", link: "mailto:yeruva@saharsh.xyz" },
     { icon: FaGithub, text: "Github", link: "gh" },
     { icon: FaInstagram, text: "Instagram", link: "ig" },
     { icon: FaLinkedinIn, text: "Linkedin", link: "ln" },
