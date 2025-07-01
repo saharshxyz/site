@@ -20,7 +20,7 @@ export default function Home() {
     <main>
       <h1>Saharsh Yeruva</h1>
       <p>
-        Studying Computational Cognitive Science (Computer Science, Economics, Math and
+        Computational Cognitive Science (Computer Science, Economics, Math and
         Statistics, Linguistics, Philosophy, and Psychology).
       </p>
       <ul className="mt-2 flex flex-wrap gap-2">
