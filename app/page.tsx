@@ -8,7 +8,7 @@ import {
 
 export default function Home() {
   return (
-    <main>
+    <main className="flex min-h-screen flex-col justify-center">
       <h1 className="text-2xl">Saharsh Yeruva</h1>
       <p className="mt-1">
         Computational Cognitive Science (Computer Science, Economics, Math and
@@ -21,14 +21,14 @@ export default function Home() {
           Icon={TwitterIcon}
         ></IconBadge>
         <IconBadge
-          label="GitHub"
-          link="https://sahar.sh/gh"
-          Icon={GithubIcon}
-        ></IconBadge>
-        <IconBadge
           label="Linkedin"
           link="https://sahar.sh/ln"
           Icon={LinkedinIcon}
+        ></IconBadge>
+        <IconBadge
+          label="GitHub"
+          link="https://sahar.sh/gh"
+          Icon={GithubIcon}
         ></IconBadge>
         <IconBadge
           label="Instagram"

@@ -1,4 +1,4 @@
-import { Analytics } from '@vercel/analytics/next';
+import { Analytics } from "@vercel/analytics/next";
 import type { Metadata } from "next";
 import { IBM_Plex_Sans } from "next/font/google";
 import "./globals.css";
@@ -22,8 +22,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={sans.variable}>
-      <body className="flex items-center justify-center">
-        <div className="mt-2 min-h-screen w-full max-w-prose p-3">
+      <body className="flex min-h-screen items-center justify-center">
+        <div className="w-full max-w-prose p-3">
           {children}
           <Analytics />
         </div>
