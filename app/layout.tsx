@@ -1,3 +1,4 @@
+import { Analytics } from '@vercel/analytics/next';
 import type { Metadata } from "next";
 import { IBM_Plex_Sans } from "next/font/google";
 import "./globals.css";
@@ -24,6 +25,7 @@ export default function RootLayout({
       <body className="flex items-center justify-center">
         <div className="mt-2 min-h-screen w-full max-w-prose p-3">
           {children}
+          <Analytics />
         </div>
       </body>
     </html>
