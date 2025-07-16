@@ -1,38 +1,41 @@
-import React from "react";
+import IconBadge from "@/components/IconBadge";
 import {
-  FaGithub,
-  FaInstagram,
-  FaLinkedinIn,
-} from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
-import { HiOutlineMail } from "react-icons/hi";
-import IconBadge from "@/components/IconBadges";
+  GithubIcon,
+  InstagramIcon,
+  LinkedinIcon,
+  TwitterIcon,
+} from "lucide-react";
 
 export default function Home() {
-  const iconBadges = [
-    { icon: FaXTwitter, text: "Twitter", link: "x" },
-    { icon: FaGithub, text: "Github", link: "gh" },
-    { icon: FaInstagram, text: "Instagram", link: "ig" },
-    { icon: FaLinkedinIn, text: "Linkedin", link: "ln" },
-  ];
-
   return (
     <main>
-      <h1>Saharsh Yeruva</h1>
-      <p>
+      <h1 className="text-2xl">Saharsh Yeruva</h1>
+      <p className="mt-1">
         Computational Cognitive Science (Computer Science, Economics, Math and
         Statistics, Linguistics, Philosophy, and Psychology).
       </p>
-      <ul className="mt-2 flex flex-wrap gap-2">
-        {iconBadges.map((badge, index) => (
-          <IconBadge
-            key={index}
-            icon={badge.icon}
-            text={badge.text}
-            link={badge.link}
-          />
-        ))}
-      </ul>
+      <div className="mt-2.5 flex gap-2">
+        <IconBadge
+          label="Twitter"
+          link="https://sahar.sh/x"
+          Icon={TwitterIcon}
+        ></IconBadge>
+        <IconBadge
+          label="GitHub"
+          link="https://sahar.sh/gh"
+          Icon={GithubIcon}
+        ></IconBadge>
+        <IconBadge
+          label="Linkedin"
+          link="https://sahar.sh/ln"
+          Icon={LinkedinIcon}
+        ></IconBadge>
+        <IconBadge
+          label="Instagram"
+          link="https://sahar.sh/ig"
+          Icon={InstagramIcon}
+        ></IconBadge>
+      </div>
     </main>
   );
 }
