@@ -20,6 +20,11 @@ const eslintConfig = [
     rules: {
       "prettier/prettier": "warn",
     },
+    languageOptions: {
+      parserOptions: {
+        plugins: ["prettier-plugin-tailwindcss"],
+      },
+    },
   },
   eslintConfigPrettier,
 ];
