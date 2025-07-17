@@ -22,7 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={sans.variable}>
-      <body className="flex min-h-screen items-center justify-center">
+      <body className="flex min-h-dvh items-center justify-center">
         <div className="w-full max-w-prose p-3">
           {children}
           <Analytics />
